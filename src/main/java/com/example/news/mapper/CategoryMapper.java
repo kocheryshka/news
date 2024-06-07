@@ -22,7 +22,7 @@ public interface CategoryMapper {
 
     default CategoryListResponse categoryListToCategoryListResponse(List<Category> categories) {
         CategoryListResponse categoryListResponse = new CategoryListResponse();
-        categoryListResponse.setCategoryResponseList(
+        categoryListResponse.setCategories(
                 categories.stream()
                         .map(this::categoryToResponse)
                         .toList()

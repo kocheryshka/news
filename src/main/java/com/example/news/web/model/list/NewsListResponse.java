@@ -13,6 +13,6 @@ import java.util.List;
 @NoArgsConstructor
 public class NewsListResponse {
 
-    private List<NewsResponse> newsResponseList = new ArrayList<>();
+    private List<NewsResponse> newsList = new ArrayList<>();
 
 }

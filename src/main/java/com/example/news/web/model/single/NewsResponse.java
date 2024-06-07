@@ -15,13 +15,15 @@ public class NewsResponse {
 
     //private Long categoryId;
 
-    //private String userEmail;
+    private String categoryShortDesc;
+
+    private String userEmail;
 
     private String title;
 
     private String text;
 
-    //private Integer commentCount;
+    private Integer commentsCount;
 
     private Instant createAt;
 

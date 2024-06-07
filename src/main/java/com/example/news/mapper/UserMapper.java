@@ -17,12 +17,12 @@ public interface UserMapper {
 
     User requestToUser(UpsertUserRequest request);
 
-    //@Mapping(source = "userEmail", target = "email")
+    @Mapping(source = "userEmail", target = "email")
     User requestToUser(String userEmail, UpsertUserRequest request);
 
     default UserListResponse userListToUserListResponse(List<User> users){
         UserListResponse userListResponse = new UserListResponse();
-        userListResponse.setUserResponseList(users.stream()
+        userListResponse.setUsers(users.stream()
                 .map(this::userToResponse)
                 .toList());
 

@@ -24,6 +24,7 @@ public class NewsServiceImpl implements NewsService {
 
     @Override
     public List<News> findAll() {
+
         return newsRepository.findAll();
     }
 
@@ -62,4 +63,5 @@ public class NewsServiceImpl implements NewsService {
     public void deleteById(Long id) {
         newsRepository.deleteById(id);
     }
+
 }

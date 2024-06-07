@@ -13,6 +13,6 @@ import java.util.List;
 @NoArgsConstructor
 public class UserListResponse {
 
-    private List<UserResponse> userResponseList = new ArrayList<>();
+    private List<UserResponse> users = new ArrayList<>();
 
 }

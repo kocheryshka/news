@@ -13,6 +13,6 @@ import java.util.List;
 @NoArgsConstructor
 public class CategoryListResponse {
 
-    private List<CategoryResponse> categoryResponseList = new ArrayList<>();
+    private List<CategoryResponse> categories = new ArrayList<>();
 
 }

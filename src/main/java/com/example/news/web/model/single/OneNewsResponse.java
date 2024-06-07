@@ -11,18 +11,22 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserResponse {
+public class OneNewsResponse {
 
-    private String email;
+    private Long newsId;
 
-    private String name;
+    private String categoryShortDesc;
 
-    private String phone;
+    private String userEmail;
+
+    private String title;
+
+    private String text;
+
+    private List<CommentResponse> comments = new ArrayList<>();
 
     private Instant createAt;
 
     private Instant updateAt;
-
-    private List<OneNewsResponse> news = new ArrayList<>();
 
 }

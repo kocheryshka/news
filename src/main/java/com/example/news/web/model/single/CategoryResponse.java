@@ -18,7 +18,7 @@ public class CategoryResponse {
 
     private String description;
 
-    private List<NewsResponse> news;
+    private List<OneNewsResponse> news;
 
     private Instant createAt;
 
